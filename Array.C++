@@ -110,3 +110,54 @@
 //     }
 //     return 0;
 // }
+
+// #wap to reverse an array with extra space
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int marks[10] ={1,2,3,4,5,6,7,8,9,10};
+//     int n = sizeof(marks)/sizeof(int);
+
+//     int copymarks[n];
+//     for(int i=0;i<n;i++){
+//         int j = n-i-1;
+//         copymarks[i]=marks[j];
+//     }
+
+//     for(int i= 0;i<n;i++){
+//         marks[i]=copymarks[i];
+//     }
+
+//     for(int i=0;i<n;i++){
+//         cout<<copymarks[i]<<" ";
+//     }
+
+//     return 0;
+// }
+
+
+// #wap to reverse an array with out using extra space
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int marks[] = {1,2,3,4,5,6};
+//     int n = sizeof(marks)/sizeof(int);
+
+//     int start =0,end=n-1;
+
+//     while(start<end){
+//         int temp = marks[start];
+//         marks[start] = marks[end];
+//         marks[end] = temp;
+
+//         start++;
+//         end--;
+//     }
+
+//     for(int i=0;i<n;i++){
+//         cout<<marks[i]<<" ";
+//     }
+//     return 0;
+// }
