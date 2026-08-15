@@ -148,10 +148,7 @@
 //     int start =0,end=n-1;
 
 //     while(start<end){
-//         int temp = marks[start];
-//         marks[start] = marks[end];
-//         marks[end] = temp;
-
+//         swap(marks[start],marks[end]);
 //         start++;
 //         end--;
 //     }
@@ -161,3 +158,30 @@
 //     }
 //     return 0;
 // }
+
+
+// #wap to find an element in an array uisng binary search(array is already sorted)
+#include <iostream>
+using namespace std;
+
+int main(){
+    int array[]={1,2,3,4,5,6,7,8,9,10};
+    int n = sizeof(array)/sizeof(int);
+    int target = 7;
+    int mid = n/2;
+
+    while (mid>0){
+        if(array[mid]==target){
+            cout<<mid;
+            break;
+        }else if(array[mid]>target){
+            mid = mid/2;
+        }else if(array[mid]<target){
+            mid = mid *1.5;
+        }else{
+        cout<<"the element is not in the array";
+        }
+
+    }
+    return 0;
+}
