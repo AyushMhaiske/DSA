@@ -161,27 +161,36 @@
 
 
 // #wap to find an element in an array uisng binary search(array is already sorted)
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int marks[]={1,2,3,4,5,6,7,8,9,10};
+//     int n = sizeof(marks)/sizeof(int);
+//     int target = 10;
+//     int start =0,end=n;
+    
+//     while(start<=end){
+//         int mid = (start+end)/2;
+//         if(marks[mid]==target){
+//             cout<<mid;
+//             break;
+//         }else if(marks[mid]<target){
+//             start = mid+1;
+//         }else if(marks[mid]>target){
+//             end = mid-1;
+//         }else{
+//             cout<<"the element is not found in the array";
+//         }
+//     }
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
 int main(){
-    int marks[]={1,2,3,4,5,6,7,8,9,10};
-    int n = sizeof(marks)/sizeof(int);
-    int target = 10;
-    int start =0,end=n;
-    
-    while(start<=n){
-        int mid = (start+end)/2;
-        if(marks[mid]==target){
-            cout<<mid;
-            break;
-        }else if(marks[mid]<target){
-            start = mid+1;
-        }else if(marks[mid]>target){
-            end = mid-1;
-        }else{
-            cout<<"the element is not found in the array";
-        }
-    }
+
     return 0;
 }
