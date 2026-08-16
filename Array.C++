@@ -165,23 +165,23 @@
 using namespace std;
 
 int main(){
-    int array[]={1,2,3,4,5,6,7,8,9,10};
-    int n = sizeof(array)/sizeof(int);
-    int target = 7;
-    int mid = n/2;
-
-    while (mid>0){
-        if(array[mid]==target){
+    int marks[]={1,2,3,4,5,6,7,8,9,10};
+    int n = sizeof(marks)/sizeof(int);
+    int target = 10;
+    int start =0,end=n;
+    
+    while(start<=n){
+        int mid = (start+end)/2;
+        if(marks[mid]==target){
             cout<<mid;
             break;
-        }else if(array[mid]>target){
-            mid = mid/2;
-        }else if(array[mid]<target){
-            mid = mid *1.5;
+        }else if(marks[mid]<target){
+            start = mid+1;
+        }else if(marks[mid]>target){
+            end = mid-1;
         }else{
-        cout<<"the element is not in the array";
+            cout<<"the element is not found in the array";
         }
-
     }
     return 0;
 }
