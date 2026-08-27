@@ -187,6 +187,21 @@
 // }
 
 
+// pointer arithmatic
+// #include <iostream>
+// using  namespace std;
+
+// int main(){
+//     int a = 5;
+//     int *ptr = &a;
+
+//     cout<<ptr<<endl;
+//     ptr+3;
+//     cout<<ptr<<endl;
+
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 
