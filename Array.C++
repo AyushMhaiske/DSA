@@ -202,10 +202,38 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// void print_array(int *ptr,int n){
+//     for(int i=0;i<n;i++){
+//         cout<<(*ptr +i)<<endl;
+        
+//     }
+// }
+
+// int main(){
+//     int arr[] = {1,2,3,4,5};
+//     int n = sizeof(arr)/sizeof(int);
+//     print_array(arr,n);
+
+//     return 0;
+// }
+
+// wap to compare two pointers
+
 #include <iostream>
 using namespace std;
 
+
 int main(){
+    int arr[5]= {1,2,3,4,5};
+    int *ptr1 = arr;
+    int *ptr2 = ptr1 + 1;
+
+    int n = sizeof(arr)/sizeof(int);
+    
+    cout<<(*ptr1 == arr)<<"\n";
 
     return 0;
 }
