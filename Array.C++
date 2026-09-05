@@ -233,7 +233,7 @@ int main(){
 
     int n = sizeof(arr)/sizeof(int);
     
-    cout<<(*ptr1 == arr)<<"\n";
+    cout<<(ptr1 == arr)<<"\n";
 
     return 0;
 }
