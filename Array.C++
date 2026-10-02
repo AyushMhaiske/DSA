@@ -222,18 +222,64 @@
 
 // wap to compare two pointers
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
 
-int main(){
-    int arr[5]= {1,2,3,4,5};
-    int *ptr1 = arr;
-    int *ptr2 = ptr1 + 1;
+// int main(){
+//     int arr[5]= {1,2,3,4,5};
+//     int *ptr1 = arr;
+//     int *ptr2 = ptr1 + 1;
 
-    int n = sizeof(arr)/sizeof(int);
+//     int n = sizeof(arr)/sizeof(int);
     
-    cout<<(ptr1 == arr)<<"\n";
+//     cout<<(ptr1 == arr)<<"\n";
 
-    return 0;
-}
+//     return 0;
+// }
+
+// program for finding all the subarrays of a array
+// #include<iostream>
+// using namespace std;
+
+
+// void print_subarrays(int *arr,int n){
+//     for(int start=0;start<n;start++){
+//         for(int end=start;end<n;end++){
+//             for(int i=start;i<=end;i++){
+//                 cout<<arr[i];
+//             }
+//             cout<<",";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int n = sizeof(arr)/sizeof(int);
+    
+//     print_subarrays(arr,n);
+//     return 0;
+// }
+
+// two sum problem
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[]={1,2,3,4,5,6,7,8,9,10};
+//     int n = sizeof(arr)/sizeof(int);
+
+//     int target = 9;
+
+//     // two sum problem
+//     for(int i=0;i<n;i++){
+//         for(int j=i+1;j<n;j++){
+//             if(arr[i]+arr[j]==target){
+//                 cout<<"["<<i<<","<<j<<"]"<<endl;
+//             }
+//         }
+//     }
+//     return 0;
+// }
